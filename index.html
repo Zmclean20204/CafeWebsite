@@ -8,10 +8,7 @@
 </head>
 
 <body>
-<header class="hero" style="min-height:75vh; background:url('images/grindhard-hero.JPEG') center/cover no-repeat;">
-    <img src="/CafeWebsite/Reasources/images/grindhard-hero.JPEG" style="width:200px; border:4px solid red;">
-
-
+<header class="hero">
     <div class="hero-content">
         <h1>Grind Hard Café</h1>
         <p>Cozy coffee • Fresh bites • Good vibes</p>
@@ -38,7 +35,7 @@
     <section class="section" id="menu">
         <div class="section-header">
             <h2>Menu</h2>
-            <p>Tap “Add” to build your cart, then call to order.</p>
+            <p>Tap “Add” to build your cart, then call to order. Click an item name to see a photo (when available).</p>
         </div>
 
         <div class="menu-category">
@@ -211,8 +208,54 @@
             </div>
         </div>
 
+        <!-- FOOD MENU (with photos) -->
+        <div class="menu-category">
+            <h3>Food Menu</h3>
+
+            <!-- IMPORTANT: if any photo doesn't show, update the data-img to match your exact filename in /images -->
+            <div class="menu-list">
+                <h4>Featured Plates</h4>
+
+                <div class="menu-item" data-name="Chicken and Waffles" data-price="14.99" data-img="images/chicken-and-waffles.jpg">
+                    <span>Chicken and Waffles</span><span>$14.99</span>
+                    <button class="add-btn" type="button">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Seafood Boil" data-price="29.99" data-img="images/seafood-boil.jpg">
+                    <span>Seafood Boil</span><span>$29.99</span>
+                    <button class="add-btn" type="button">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Salmon Chopped Cheese" data-price="12.99" data-img="images/salmon-chopped-cheese.jpg">
+                    <span>Salmon Chopped Cheese</span><span>$12.99</span>
+                    <button class="add-btn" type="button">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Burger and Fries" data-price="13.99" data-img="images/burger-and-fries2.jpg">
+                    <span>Burger and Fries</span><span>$13.99</span>
+                    <button class="add-btn" type="button">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Bacon Egg &amp; Cheese" data-price="7.99" data-img="images/cafe-bec.jpg">
+                    <span>Bacon Egg &amp; Cheese</span><span>$7.99</span>
+                    <button class="add-btn" type="button">Add</button>
+                </div>
+
+                <div class="menu-item" data-name="Shrimp and Grits" data-price="18.99" data-img="images/cafe-shrimp-and-grits.jpg">
+                    <span>Shrimp and Grits</span><span>$18.99</span>
+                    <button class="add-btn" type="button">Add</button>
+                </div>
+            </div>
+
+
+            <p class="menu-hint">
+
+            </p>
+        </div>
+
         <div class="menu-category">
             <h3>Pastries & Bites</h3>
+
             <div class="card-grid">
                 <article class="card card-menu">
                     <div>
@@ -239,11 +282,12 @@
                 <article class="card card-menu">
                     <div>
                         <h4>Avocado Toast</h4>
+
                         <p>Sourdough toast with smashed avocado & toppings.</p>
                     </div>
                     <div class="card-actions">
                         <span class="price">$7.25</span>
-                        <button class="add-btn" type="button" data-name="Avocado Toast" data-price="7.25">Add</button>
+                        <button class="add-btn" type="button" data-name="Avocado Toast" data-price="7.25" data-img="images/avacado toast.png">Add</button>
                     </div>
                 </article>
             </div>
@@ -261,7 +305,6 @@
             <article class="card">
                 <h3>Taco Tuesday</h3>
                 <p class="event-meta">Every Tuesday • 7:00 PM – 9:00 PM</p>
-
                 <p>Singers, poets, and performers are welcome. Sign-up starts at 6:30 PM.</p>
             </article>
 
@@ -288,22 +331,66 @@
 
         <div class="gallery-grid">
             <figure class="gallery-item">
-                <img src="../images/latte.jpg" alt="Latte art" />
-                <figcaption>Signature latte art.</figcaption>
+                <img src="images/store-front.jpg" alt="Store front" />
+                <figcaption>Store Front</figcaption>
             </figure>
+
             <figure class="gallery-item">
-                <img src="../images/cafe-interior.jpg" alt="Café interior" />
-                <figcaption>Cozy seating & warm lighting.</figcaption>
+                <img src="images/inside-the-cafe.jpg" alt="Inside the cafe" />
+                <figcaption>Inside the Café</figcaption>
             </figure>
+
             <figure class="gallery-item">
-                <img src="../images/pastries.jpg" alt="Pastries display" />
-                <figcaption>Fresh pastries every morning.</figcaption>
+                <img src="images/seating.jpg" alt="Vibes and seating" />
+                <figcaption>Vibes &amp; Seating</figcaption>
             </figure>
+
             <figure class="gallery-item">
-                <img src="../images/event-night.jpg" alt="Live event at the café" />
-                <figcaption>Live music nights.</figcaption>
+                <img src="images/register.jpg" alt="Register area" />
+                <figcaption>Register</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/expesso-machine.jpg" alt="Espresso machine" />
+                <figcaption>Espresso Machine</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/kitchen1.jpg" alt="Kitchen" />
+                <figcaption>Kitchen</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/teas.jpg" alt="Tea selection" />
+                <figcaption>Teas</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/cafe-flavors.jpg" alt="Cafe flavors" />
+                <figcaption>Flavors</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/cafe3.jpg" alt="Cafe view" />
+                <figcaption>Café</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/cafe5.jpg" alt="Cafe view" />
+                <figcaption>Café</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/cafe6.jpg" alt="Cafe view" />
+                <figcaption>Café</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/cafe7.jpg" alt="Cafe view" />
+                <figcaption>Café</figcaption>
             </figure>
         </div>
+
     </section>
 
     <!-- Visit / Contact -->
@@ -355,7 +442,7 @@
 <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
     <div class="cart-header">
         <h3>Your Cart</h3>
-        <button class="cart-close" id="closeCart" aria-label="Close cart">✕</button>
+        <button class="cart-close" id="closeCart" type="button" aria-label="Close cart">✕</button>
     </div>
 
     <div class="cart-body">
@@ -382,6 +469,18 @@
 
 <div class="cart-backdrop" id="cartBackdrop" aria-hidden="true"></div>
 
+<!-- Photo Modal -->
+<div class="modal" id="photoModal" aria-hidden="true" role="dialog" aria-label="Menu item photo">
+    <div class="modal-card" role="document">
+        <div class="modal-header">
+            <h3 id="modalTitle">Item</h3>
+            <button class="modal-close" id="closePhoto" type="button" aria-label="Close photo">✕</button>
+        </div>
+        <img id="modalImg" src="" alt="" />
+        <p class="modal-hint">Tip: click “Add” to put it in your cart.</p>
+    </div>
+</div>
+
 <script>
     // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -394,6 +493,12 @@
     const cartItemsEl = document.getElementById("cartItems");
     const cartCountEl = document.getElementById("cartCount");
     const cartTotalItemsEl = document.getElementById("cartTotalItems");
+
+    // --- Photo Modal ---
+    const photoModal = document.getElementById("photoModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalImg = document.getElementById("modalImg");
+    const closePhotoBtn = document.getElementById("closePhoto");
 
     function loadCart() {
       try { return JSON.parse(localStorage.getItem(CART_KEY)) || {}; }
@@ -458,11 +563,99 @@
       }
     }
 
-    // Click Add buttons (works for menu rows AND pastry cards)
+    // Helpers: try loading an image (so the modal doesn't show broken icons)
+    function tryLoadImage(src) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(src);
+        img.onerror = reject;
+        img.src = src;
+      });
+    }
+
+    async function openPhotoFor(name, preferredSrc) {
+      modalTitle.textContent = name;
+
+      const candidates = [];
+      if (preferredSrc) candidates.push(preferredSrc);
+
+      // Some common filename guesses (you can ignore if you use data-img everywhere)
+      const lower = name.toLowerCase();
+      const spaced = `images/${lower}.jpg`;
+      const spacedJpeg = `images/${lower}.jpeg`;
+      const spacedPng = `images/${lower}.png`;
+      candidates.push(spaced, spacedJpeg, spacedPng);
+
+      // Known “real” filenames from your folder (edit if yours differ)
+      const known = {
+        "Avocado Toast": ["images/avacado toast.png", "images/avocado toast.png", "images/avocado-toast.png"],
+        "Chicken and Waffles": ["images/chicken and waffles.jpeg", "images/chicken and waffles.jpg", "images/chicken-and-waffles.jpeg"],
+        "Seafood Boil": ["images/seafood boil.jpeg", "images/seafood boil.jpg", "images/seafood-boil.jpeg"],
+        "Salmon Chopped Cheese": ["images/salmon chopped chee.jpeg", "images/salmon chopped chee.jpg", "images/salmon-chopped-chee.jpeg"],
+        "Burger and Fries": ["images/burger and fries 2.jpeg", "images/burger and fries 2.jpg", "images/burger-and-fries-2.jpeg"],
+        "Cafe BEC": ["images/cafe bec.jpeg", "images/cafe bec.jpg", "images/cafe-bec.jpeg"],
+        "Shrimp and Grits": ["images/cafe shrimp and grits.jpeg", "images/cafe shrimp and grits.jpg", "images/cafe-shrimp-and-grits.jpeg"]
+      };
+
+      if (known[name]) candidates.unshift(...known[name]);
+
+      // Pick the first one that actually loads
+      let finalSrc = "";
+      for (const src of candidates) {
+        try {
+          finalSrc = await tryLoadImage(src);
+          break;
+        } catch (_) {}
+      }
+
+      if (!finalSrc) {
+        // fallback: show nothing, but still open with a message
+        modalImg.removeAttribute("src");
+        modalImg.alt = "";
+        modalImg.style.display = "none";
+      } else {
+        modalImg.style.display = "block";
+        modalImg.src = finalSrc;
+        modalImg.alt = name;
+      }
+
+      photoModal.classList.add("open");
+      photoModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("no-scroll");
+    }
+
+    function closePhoto() {
+      photoModal.classList.remove("open");
+      photoModal.setAttribute("aria-hidden", "true");
+      modalImg.src = "";
+      modalImg.style.display = "block";
+      document.body.classList.remove("no-scroll");
+    }
+
+    // Make menu names clickable (menu rows + cards)
+    function enhanceClickableNames() {
+      // Menu rows: first span is the name
+      document.querySelectorAll(".menu-item > span:first-child").forEach((el) => {
+        el.classList.add("menu-name");
+        el.setAttribute("role", "button");
+        el.tabIndex = 0;
+      });
+
+      // Cards: h4 is the name
+      document.querySelectorAll(".card-menu h4").forEach((el) => {
+        el.classList.add("menu-name");
+        el.setAttribute("role", "button");
+        el.tabIndex = 0;
+      });
+    }
+
+    enhanceClickableNames();
+
+    // Click handlers:
     document.addEventListener("click", (e) => {
+      // 1) Add buttons (works for menu rows AND pastry cards)
       const addBtn = e.target.closest(".add-btn");
       if (addBtn) {
-        // For pastry cards we store data on the button; for menu rows we store on the row
         const fromButton = addBtn.dataset.name && addBtn.dataset.price;
         const itemEl = fromButton ? addBtn : addBtn.closest(".menu-item");
 
@@ -483,6 +676,7 @@
         return;
       }
 
+      // 2) Qty buttons
       const qtyBtn = e.target.closest(".qty-btn");
       if (qtyBtn) {
         const action = qtyBtn.dataset.action;
@@ -500,12 +694,78 @@
         renderCart();
         return;
       }
+
+      // 3) Click name to open photo
+      const nameEl = e.target.closest(".menu-name");
+      if (nameEl) {
+        // If this was inside a menu-item row, use its data-name/data-img
+        const row = nameEl.closest(".menu-item");
+        const card = nameEl.closest(".card-menu");
+
+        if (row) {
+          const name = row.dataset.name || nameEl.textContent.trim();
+          const img = row.dataset.img || "";
+          openPhotoFor(name, img);
+          return;
+        }
+
+        if (card) {
+          const name = nameEl.textContent.trim();
+          // if the Add button has data-img, use it
+          const btn = card.querySelector(".add-btn");
+          const img = btn?.dataset?.img || "";
+          openPhotoFor(name, img);
+          return;
+        }
+      }
     });
 
-    // Open/close cart
-    document.getElementById("openCart").addEventListener("click", openCart);
-    document.getElementById("closeCart").addEventListener("click", closeCart);
-    cartBackdrop.addEventListener("click", closeCart);
+    // Keyboard: Enter/Space on menu-name
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closePhoto();
+        closeCart();
+        return;
+      }
+
+      const active = document.activeElement;
+      const isMenuName = active && active.classList && active.classList.contains("menu-name");
+      if (isMenuName && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        active.click();
+      }
+    });
+
+    // Open/close cart (stop clicks from doing anything else)
+    document.getElementById("openCart").addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openCart();
+    });
+
+    document.getElementById("closeCart").addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      closeCart();
+    });
+
+    cartBackdrop.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      closeCart();
+    });
+
+    // Close photo modal
+    closePhotoBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      closePhoto();
+    });
+
+    photoModal.addEventListener("click", (e) => {
+      // Click outside the card closes
+      if (e.target === photoModal) closePhoto();
+    });
 
     // Clear cart
     document.getElementById("clearCart").addEventListener("click", () => {
@@ -518,4 +778,3 @@
 </script>
 </body>
 </html>
-
