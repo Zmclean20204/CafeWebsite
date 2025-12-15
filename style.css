@@ -15,7 +15,7 @@ body {
 .hero{
   min-height: 75vh;
   background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-              url("Reassources/images/grindhard-hero.JPEG") center/cover no-repeat;
+              url("/images/grindhard-hero.jpeg") center/cover no-repeat;
   color: #f9fafb;
   display: flex;
   align-items: center;
